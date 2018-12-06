@@ -3,16 +3,11 @@
   <head>
     <title>Ms Fry's WebPage</title>
   </head>
+  <!--CSS tags must be before body tags-->
   <style>
-        
         h3 {
             color: rgb(0, 232, 15);
-        }  
-        
-        body {
-            background-color: rgb(97, 250, 255);
-        }
-            
+        }   
         </style>
   <body>
   <h1>How to create a webpage on Github:</h1>
@@ -29,7 +24,7 @@
     <h3>On your desktop:</h3>
     
     <ol>
-        <li>open file explorer <img src="fileexplorer.PNG"> </li>
+        <li>open file explorer <img src="images/fileexplorer.PNG" /> </li>
         <li> </li>
         <li> </li>
     </ol> 
@@ -38,5 +33,38 @@
         <li>See Webpage Project assignment in the Final Project module</li>
     </ul>
 	
+	<h1> The world will end in 
+		<span id="countdown"> 30 </span>
+		seconds.
+		</h1><br>
+	<div id = "slideshow">
+		<img src = "autumnforest.jpg" />
+		<img src = "beach.jpeg" />
+		<img src = "butterfly.jpeg" />
+		<img src = "field.jpeg" />
+		<img src = "park.jpeg" />
+		<img src = "woodpecker.jpg" />
+	</div>
+	<!--script tags at end-->
+
+	<script>		
+		//Animating webpages
+		//Step 1. What element do we want to animate?
+		var countdown = document.getElementById("countdown");
+		//Step 2. What function will change it each time?
+		var countItDown = function(){
+			var currentTime = parseFloat(countdown.textContent);
+			if (currentTime > 0) {
+			countdown.textContent = currentTime - 1;
+			} else {
+				window.clearInterval(timer);
+			}
+		};
+		// Step 3. Call that on an interval
+		var timer = window.setInterval(countItDown, 1000);
+	</script>
+	<script src = "slideshow.js"></script>
+	<script> slideShow(document.getElementById("slideshow"));
+		</script>
   </body>
 </html>

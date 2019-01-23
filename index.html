@@ -5,8 +5,12 @@
    <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="stylesheet1.css">
+  <style>
+        h3 {
+            color: rgb(0, 232, 15);
+        }   
+        </style>
   <body>
-	   
   <h1>How to create a webpage on Github:</h1>
     
     <h3>On your MPHS Laptop:</h3>
@@ -68,13 +72,12 @@
 	<script src = "slideshow.js"></script>
 	<script> slideShow(document.getElementById("slideshow"));
 		</script>
-  </body>
-</html>
-<!DOCTYPE html>
+		<p>  js canvas khan academy style </p>
+		<!DOCTYPE html>
 <!-- This is based on DillingerLee's great template here:
 https://github.com/Team-Code/KA_Offline -->
 <html> 
- <head><style>.xpdopen.rYczAc, .duf3 { display: none !important; }</style>
+ <head>
     <title>Processing.JS inside Webpages: Template</title> 
 </head>
  <body>
@@ -96,12 +99,14 @@ https://github.com/Team-Code/KA_Offline -->
         frameRate(30);
         
         // ProgramCodeGoesHere
-       noStroke();
-	draw = function() {
-    	fill(random(mouseX), 0, 0);
-    	ellipse(mouseX, mouseY, 10, 20);
+        noStroke();
+
+		draw = function() {
+		fill(random(mouseX), 0, 0);
+		ellipse(mouseX, mouseY, 10, 20);
 };
 
+		
     }};
 
     // Get the canvas that Processing-js will use
@@ -110,4 +115,6 @@ https://github.com/Team-Code/KA_Offline -->
     var processingInstance = new Processing(canvas, sketchProc); 
  </script>
 
+</html>
+  </body>
 </html>

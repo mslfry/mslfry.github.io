@@ -27,3 +27,11 @@ var slideShow = function(container) {
     
     nextSlide.call(this);
 };
+noStroke();
+
+draw = function() {
+    fill(random(mouseX), 0, 0);
+    ellipse(mouseX, mouseY, random(400),random(400));
+};
+
+
